@@ -1,0 +1,31 @@
+{
+  "name": "jsexcel",
+  "version": "1.0.0",
+  "description": "Pure javascript excel application",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QPoser/js-excel.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel"
+  ],
+  "author": "Andrey Erdikov <a.erdikov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QPoser/js-excel/issues"
+  },
+  "homepage": "https://github.com/QPoser/js-excel#readme",
+  "private": true,
+  "devDependencies": {
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
