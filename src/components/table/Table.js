@@ -59,7 +59,6 @@ export class Table extends ExcelComponent {
     this.selection.select($cell);
     this.$emit('table:cell:focus', $cell);
     const styles = $cell.getStyles(Object.keys(defaultStyles));
-    console.log('Styles dispatch:' . styles);
     this.$dispatch(actions.changeStyles(styles));
   }
 
