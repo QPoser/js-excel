@@ -2,8 +2,10 @@
 import {
   APPLY_STYLE,
   CHANGE_STYLES,
-  CHANGE_TEXT, CHANGE_TITLE,
-  TABLE_RESIZE
+  CHANGE_TEXT,
+  CHANGE_TITLE,
+  TABLE_RESIZE,
+  UPDATE_DATE
 } from '@/redux/types';
 
 export function rootReducer(state, action) {
@@ -35,6 +37,8 @@ export function rootReducer(state, action) {
       }
     case CHANGE_TITLE:
       return {...state, title: action.data};
+    case UPDATE_DATE:
+      return {...state, openedDate: new Date().toJSON()}
     default: return state;
   }
 }
